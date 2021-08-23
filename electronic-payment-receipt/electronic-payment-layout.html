@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Electronic Payment Layout</title>
+        <meta charset = 'UTF-8'>
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+        <link href = '../styles/bootstrap_4.css' rel = 'stylesheet'>
+        <link href = '../styles/bootstrap.css' rel = 'stylesheet'>
+    </head>
+    <body style = 'font-size: 12px;'>
+        <div class = 'container'>
+            <!--
+                Sección Encabezado
+            -->
+            <div class = 'row border border-3 border-dark mt-3'>
+                <h3>Complemento de Pago</h3>
+
+                <div class = 'row justify-content-between'>
+                    <div class = 'col-md-6'>
+                        <h6>Receptor</h6>
+                        <p class = 'mb-1 lh-1'>@receptor = FASTENAL MEXICO S DE RL DE CV</p>
+                        <p class = 'mb-1 lh-1'>@rfcReceptor = FME991110CZ9</p>
+                        <p class = 'mb-1 lh-1'>@usoCFDI = P01</p>
+                    </div>
+                    <div class = 'col-md-6'>
+                        <h6>Emisor</h6>
+                        <p class = 'mb-1 lh-1'>@emisor = ITW POLYMEX S DE RL DE CV</p>
+                        <p class = 'mb-1 lh-1'>@rfcEmisor = IPM6203226B4</p>
+                    </div>
+                </div>
+
+                <div class = 'row justify-content-between mt-3'>
+                    <div class = 'col-md-4'>
+                        <h6>Serie</h6>
+                        <p class = 'lh-1'>@serie = P</p>
+                    </div>
+                    <div class = 'col-md-4'>
+                        <h6>Folio</h6>
+                        <p class = 'lh-1'>@folio = 26014</p>
+                    </div>
+                    <div class = 'col-md-4'>
+                        <h6>Fecha</h6>
+                        <p class = 'lh-1'>@fecha = 12/08/2021</p>
+                    </div>
+                </div>
+
+                <div class = 'row row justify-content-between'>
+                    <div class = 'col-md-4'>
+                        <h6>Moneda</h6>
+                        <p class = 'lh-1'>@moneda = XXX</p>
+                    </div>
+
+                    <div class = 'col-md-4'>
+                        <!-- Se queda vacío para hacer el espacio que se quita del Método de Pago -->
+                    </div>
+
+                    <div class = 'col-md-4'>
+                        <h6>UUID</h6>
+                        <p class = 'lh-1'>@uuid = fe3cebd9-33dc-44a9-8dc2-7ac538ef5e3d</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección Detalle
+            -->
+            <div class = 'row mt-3'>
+                <div class = 'section-border'>
+
+                    <!--
+                        Conceptos
+                    -->
+                    <div class = 'm-2 row bottom-border'>
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Clave Producto Servicio</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Cantidad</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Clave Unidad</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Descripción</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Valor Unitario</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Importe</p>
+                        </div>
+                    </div>
+
+                    <div class = 'm-2 row'>
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@claveProdServ = 84111506</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@cantidad = 1</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@claveUnidad = ACT</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@descripcion = Pago</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@valorUnitario = -</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-end'>@importe = -</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección Pago
+            -->
+            <div class = 'row mt-3 p-3'>
+                <div class = 'section-border'>
+                    <h5>Pago</h5>
+
+                    <div class = 'row'>
+                        <p class = 'col-md-2 fw-bold'>Cuenta Beneficiario</p>
+                        <p class = 'col-md-2'>@cuentaBeneficiario = 3291922999</p>
+                        <p class = 'col-md-2 fw-bold'>Forma de Pago</p>
+                        <p class = 'col-md-2'>@formaPago = 03</p>
+                        <p class = 'col-md-2 fw-bold'>Tipo Cambio</p>
+                        <p class = 'col-md-2'>@tipoCambio = 19.929300</p>
+                    </div>
+
+                    <div class = 'row'>
+                        <p class = 'col-md-2 fw-bold'>Cuenta Ordenante</p>
+                        <p class = 'col-md-2'>@cuentaOrdenante = 4121096705</p>
+                        <p class = 'col-md-2 fw-bold'>Moneda</p>
+                        <p class = 'col-md-2'>@monedaPago = USD</p>
+                        <p class = 'col-md-2 fw-bold'>Banco Ordenante</p>
+                        <p class = 'col-md-2'>@bancoOrdenante = WELLS FARGO BANK NA</p>
+                    </div>
+
+                    <div class = 'row'>
+                        <p class = 'col-md-2 fw-bold'>Fecha Pago</p>
+                        <p class = 'col-md-2'>@fechaPago = 06/08/2021</p>
+                        <p class = 'col-md-2 fw-bold'>Monto Pago</p>
+                        <p class = 'col-md-2'>@montoPago = 1,712.49</p>
+                        <p class = 'col-md-2 fw-bold'>RFC Ordenante</p>
+                        <p class = 'col-md-2'>@rfcOrdenante = XEXX010101000</p>
+                    </div>
+
+                    <div class = 'row m-2 border-bottom border-2 border-dark'>
+                        <div class = 'col-md-1'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Serie</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Folio</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>UUID</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Método de Pago DR</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Moneda DR</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Num Parcialidad</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Saldo Anterior</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Importe Pago</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Saldo Insoluto</p>
+                        </div>
+                    </div>
+
+                    <div class = 'row'>
+                        <div class = 'col-md-1'>
+                            <p class = 'text-center'>@serieDoc = RI</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'text-center'>@folioDoc = 77425</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@uuidDoc = eac881ff-28df-4746-a651-05ca643cc061</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@metodoPagoDR = PPD</p>
+                        </div>
+
+                        <div class = 'col-md-2'>
+                            <p class = 'text-center'>@monedaDR = USD</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'text-center'>@pacialidad = 1</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'text-center'>@saldoAnterior = 1,041.00</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'text-center'>@importePago = 1,041.00</p>
+                        </div>
+
+                        <div class = 'col-md-1'>
+                            <p class = 'text-center'>@saldoInsoluto = -</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección Pie de Documento
+            -->
+            <div class = 'row mt-3' style = 'font-size: 10px;'>
+                <p class = 'fw-bold'>Sello Digital del CFDI</p>
+                <p class = 'text-break'>@selloDigCFDI = kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5BghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStPYE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0bx3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==</p>
+
+                <p class = 'fw-bold'>Sello Digital del SAT</p>
+                <p class = 'text-break'>@selloDigSAT = R5dXrigpeMGZOvQKTSQHUaPgdyX1ad4gaen6+I0QpNEKkxS324jFmeLcU75QJu/T9ZdsNzFhvJELCJSObJvHLa7wrEb40Cu960LXSF6K9YNKSir9rwAXMXD/oCi5O/hwNCSqRqJWM2myzlvN3jk+3fSMB9+CRJUoCORwmpGhH/77e4UAPXhY8uAZj9G/leoPPdIndOGpGZZx/eEKrJYJls4mSR/++1wBMmEwxEHfIB5bIaW2ISXgWTUzxIVq0pIoK85zpZKFYgYrEFWBZz3mmUnMaoTh9uJ+KweFgF+kPICgrMpUGr/4EtSmJQbyOxh1sQu2yrgnUeObf6JC2ZqU4w==</p>
+            </div>
+
+            <div class = 'row' style = 'font-size: 10px;'>
+                <div class = 'col-md-2'>
+                    @qrCode = Aquí va el QR Code
+                </div>
+
+                <div class = 'col-md-10'>
+                    <div class = 'row'>
+                        <p class = 'fw-bold'>Cadena Original del complemento de certificación digital del SAT</p>
+                        <p class = 'text-break'>@cadenaOriginal = ||1.1|12c5eab9-95b3-45bb-bbf1-2c801d62266b|2021-05-20T12:42:23|LSO1306189R5|kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5B
+                            ghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStP
+                            YE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0b
+                            x3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==|00001000000408254801||</p>
+                    </div>
+
+                    <div class = 'row'>
+                        <p class = 'col-md-3 fw-bold'>RFC del Proveedor de Certificación</p>
+                        <p class = 'col-md-3'>@rfcProveedorCert = LSO1306189R5</p>
+                        <p class = 'col-md-3 fw-bold'>Fecha y hora de certificación</p>
+                        <p class = 'col-md-3'>@fechaCertificacion = 2021-05-20 12:42:23</p>
+                    </div>
+
+                    <div class = 'row'>
+                        <p class = 'col-md-3 fw-bold'>No. De serie del certificado SAT</p>
+                        <p class = 'col-md-3'>@noSerieCertificado = 00001000000408254800</p>
+                        <p class = 'col-md-6 fw-bold'>PDF generado y creado por Garantía Total en Consultoría Tecnológica Avanzada S.A. de C.V.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección Pie de Página
+            -->
+            <div class = 'row justify-content-between'>
+                <p class = 'fw-bold col-md-6'>Este documento es una representación impresa de un CFDI</p>
+                <p class = 'fw-bold col-md-6 text-end'>Página # de #</p><!-- Imprimir el número de página -->
+            </div>
+        </div>
+    </body>
+</html>

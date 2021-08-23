@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Invoice Layout</title>
+        <meta charset = 'UTF-8'>
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+        <link href = 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css' rel = 'stylesheet' integrity = 'sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We' crossorigin = 'anonymous'>
+        <link href = 'css/style.css' rel = 'stylesheet'>
+    </head>
+
+    <body style = 'font-size: 12px;'>
+        <div class = 'container'>
+            <!--
+                Sección Encabezado
+            -->
+            <div class = 'row border border-3 border-dark mt-3'>
+                <h3>Nota de Crédito</h3>
+
+                <div class = 'row justify-content-between'>
+                    <div class = 'col'>
+                        <h6>Receptor</h6>
+                        <p class = 'mb-1 lh-1'>DISTRIBUIDORA MARPVEL DE AUTOPARTES SA DE CV</p>
+                        <p class = 'mb-1 lh-1'>DMA9807252VA</p>
+                        <p class = 'mb-1 lh-1'>G02</p>
+                    </div>
+                    <div class = 'col'>
+                        <h6>Emisor</h6>
+                        <p class = 'mb-1 lh-1'>ITW POLYMEX S DE RL DE CV</p>
+                        <p class = 'mb-1 lh-1'>IPM6203226B4</p>
+                    </div>
+                </div>
+
+                <div class = 'row row justify-content-between mt-3'>
+                    <div class = 'col'>
+                        <h6>Serie</h6>
+                        <p class = 'lh-1'>RM</p>
+                    </div>
+                    <div class = 'col'>
+                        <h6>Folio</h6>
+                        <p class = 'lh-1'>7433</p>
+                    </div>
+                    <div class = 'col'>
+                        <h6>Fecha</h6>
+                        <p class = 'lh-1'>26/04/2021</p>
+                    </div>
+                </div>
+                <div class = 'row row justify-content-between'>
+                    <div class = 'col'>
+                        <h6>Moneda</h6>
+                        <p class = 'lh-1'>MXN</p>
+                    </div>
+                    <div class = 'col'>
+                        <h6>Método de Pago</h6>
+                        <p class = 'lh-1'>PUE</p>
+                    </div>
+                    <div class = 'col'>
+                        <h6>UUID</h6>
+                        <p class = 'lh-1'>ce112520-1bdd-4f42-a2fa-44896ec7dfee</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección CFDIs Relacionados
+            -->
+            <div class = 'row border border-3 border-dark mt-3'>
+                <h3>CFDIs Relacionados</h3>
+
+                <div class = 'row'>
+                    <p class = 'col-2 fw-bold'>Tipo de Relación</p>
+                    <p class = 'col-3'>01</p>
+                </div>
+
+                <div class = 'row'>
+                    <p class = 'col-2 fw-bold'>UUID Relacionado</p>
+                    <p class = 'col-3'>7da8e9c5-ce88-497e-b830-35ac97d8947a</p>
+                </div>
+            </div>
+
+            <!--
+                Sección Detalle
+            -->
+            <div class = 'row mt-3'>
+                <div class = 'border border-3 border-dark'>
+
+                    <!--
+                        Conceptos
+                    -->
+                    <div class = 'm-2 row border-bottom border-2 border-dark'>
+                        <div class = 'col'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Clave Producto Servicio</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Cantidad</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Clave Unidad</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Descripción</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Precio Unitario</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center fw-bold' style = 'font-size: 13px;'>Importe</p>
+                        </div>
+                    </div>
+
+                    <div class = 'm-2 row'>
+                        <div class = 'col'>
+                            <p class = 'text-center'>84111506</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center'>1</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center'>ACT</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center'>PROMOCION 1 EN 10</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-center'>41,158.60</p>
+                        </div>
+
+                        <div class = 'col'>
+                            <p class = 'text-end'>41,158.60</p>
+                        </div>
+                    </div>
+
+                    <!--
+                        Traslados
+                    -->
+                    <div class = 'm-2 row'>
+                        <div class = 'col-1 offset-8'>
+                            <p class = 'lh-1 fw-bold'>Traslados</p>
+                        </div>
+
+                        <div class = 'col-2'>
+                            <p class = 'lh-1'>Base</p>
+                        </div>
+
+                        <div class="col-1">
+                            <p class = 'text-end lh-1'>41,158.60</p>
+                        </div>
+                    </div>
+
+                    <div class = 'm-2 row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'lh-1'>Impuesto</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end lh-1'>002</p>
+                        </div>
+                    </div>
+
+                    <div class = 'm-2 row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'lh-1'>Tipo Factor</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end lh-1'>Tasa</p>
+                        </div>
+                    </div>
+
+                    <div class = 'm-2 row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'lh-1'>Tasa o Cuota</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end lh-1'>16 %</p>
+                        </div>
+                    </div>
+
+                    <div class = 'm-2 row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'lh-1'>Importe</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end lh-1'>6,585.38</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--
+                    Sección Totales
+                -->
+                <div class = 'border-3 border-dark'>
+                    <div class = 'row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'fw-bold'>Subtotal</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end'>41,158.60</p>
+                        </div>
+                    </div>
+
+                    <div class = 'row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'fw-bold'>Impuestos Trasladados</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end'>6,585.38</p>
+                        </div>
+                    </div>
+
+                    <div class = 'row'>
+                        <div class = 'offset-9 col-2 border-2 border-bottom border-dark'>
+                            <p class = 'fw-bold'>Retenciones</p>
+                        </div>
+
+                        <div class = 'col-1 border-2 border-bottom border-dark'>
+                            <p class = 'text-end'>-</p>
+                        </div>
+                    </div>
+
+                    <div class = 'row'>
+                        <div class = 'offset-9 col-2'>
+                            <p class = 'fw-bold'>Total</p>
+                        </div>
+
+                        <div class = 'col-1'>
+                            <p class = 'text-end'>47,743.98</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección Pie de Documento
+            -->
+            <div class = 'row mt-3' style = 'font-size: 10px;'>
+                <p class = 'fw-bold'>Sello Digital del CFDI</p>
+                <p class = 'text-break'>kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5BghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStPYE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0bx3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==</p>
+
+                <p class = 'fw-bold'>Sello Digital del SAT</p>
+                <p class = 'text-break'>R5dXrigpeMGZOvQKTSQHUaPgdyX1ad4gaen6+I0QpNEKkxS324jFmeLcU75QJu/T9ZdsNzFhvJELCJSObJvHLa7wrEb40Cu960LXSF6K9YNKSir9rwAXMXD/oCi5O/hwNCSqRqJWM2myzlvN3jk+3fSMB9+CRJUoCORwmpGhH/77e4UAPXhY8uAZj9G/leoPPdIndOGpGZZx/eEKrJYJls4mSR/++1wBMmEwxEHfIB5bIaW2ISXgWTUzxIVq0pIoK85zpZKFYgYrEFWBZz3mmUnMaoTh9uJ+KweFgF+kPICgrMpUGr/4EtSmJQbyOxh1sQu2yrgnUeObf6JC2ZqU4w==</p>
+            </div>
+
+            <div class = 'row' style = 'font-size: 10px;'>
+                <div class = 'col-2'>
+                    Aquí va el QR Code
+                </div>
+
+                <div class = 'col-10'>
+                    <div class = 'row'>
+                        <p class = 'fw-bold'>Cadena Original del complemento de certificación digital del SAT</p>
+                        <p class = 'text-break'>||1.1|12c5eab9-95b3-45bb-bbf1-2c801d62266b|2021-05-20T12:42:23|LSO1306189R5|kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5B
+                            ghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStP
+                            YE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0b
+                            x3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==|00001000000408254801||</p>
+                    </div>
+
+                    <div class = 'row'>
+                        <p class = 'col-3 fw-bold'>RFC del Proveedor de Certificación</p>
+                        <p class = 'col-3'>LSO1306189R5</p>
+                        <p class = 'col-3 fw-bold'>Fecha y hora de certificación</p>
+                        <p class = 'col-3'>2021-05-20 12:42:23</p>
+                    </div>
+
+                    <div class = 'row'>
+                        <p class = 'col-3 fw-bold'>No. De serie del certificado SAT</p>
+                        <p class = 'col-3'>00001000000408254800</p>
+                        <p class = 'col-6 fw-bold'>PDF generado y creado por Garantía Total en Consultoría Tecnológica Avanzada S.A. de C.V.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                Sección Pie de Página
+            -->
+            <div class = 'row justify-content-between'>
+                <p class = 'fw-bold col'>Este documento es una representación impresa de un CFDI</p>
+                <p class = 'fw-bold col text-end'>Página 1 de 1</p>
+            </div>
+        </div>
+    </body>
+</html>
