@@ -659,12 +659,15 @@ progress {
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
+  display: -webkit-box; /* wkhtmltopdf uses this one */
   display: flex;
+  -webkit-box-pack: center; /* wkhtmltopdf uses this one */
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5);
 }
+
 .row > * {
   flex-shrink: 0;
   width: 100%;

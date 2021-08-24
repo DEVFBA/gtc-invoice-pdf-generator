@@ -102,7 +102,7 @@
                     <!--
                         Conceptos
                     -->
-                    <table class = 'table table-borderless'>
+                    <table class = 'table'>
                         <!-- Concepto -->
                         <tr class = 'border-dark'>
                             <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Clave Producto Servicio</td>
@@ -342,96 +342,70 @@
             <!--
                 Sección Complemento de Comercio Exterior
             -->
-            <div class = 'row mt-3'>
-                <div class = 'border border-3 border-dark'>
-                    <h5>Complemento de Comercio Exterior</h5>
+            <div class = 'section section-border'>
+                <h4>Complemento de Comercio Exterior</h4>
 
-                    <div class = 'row'>
-                        <p class = 'col fw-bold'>Tipo de Operación</p>
-                        <p class = 'col'>@tipoOperacion = 2</p>
-                        <p class = 'col fw-bold'>Incoterm</p>
-                        <p class = 'col'>@incoterm = FAS</p>
-                    </div>
+                <table class = 'table'>
+                    <tr>
+                        <td class = 'fw-bold' colspan = '3'>Tipo de Operación</td>
+                        <td colspan = '3'>@tipoOperacion = 2</td>
+                        <td class = 'fw-bold' colspan = '3'>Incoterm</td>
+                        <td colspan = '3'>@incoterm = FAS</td>
+                    </tr>
 
-                    <div class = 'row'>
-                        <p class = 'col fw-bold'>Clave de Pedimento</p>
-                        <p class = 'col'>@clavePedimento = A1</p>
-                        <p class = 'col fw-bold'>Subdivisión</p>
-                        <p class = 'col'>@subdivision = 0</p>
-                    </div>
+                    <tr>
+                        <td class = 'fw-bold' colspan = '3'>Clave de Pedimento</td>
+                        <td colspan = '3'>@clavePedimento = A1</td>
+                        <td class = 'fw-bold' colspan = '3'>Subdivisión</td>
+                        <td colspan = '3'>@subdivision = 0</td>
+                    </tr>
 
-                    <div class = 'row'>
-                        <p class = 'col fw-bold'>Certificado de Origen</p>
-                        <p class = 'col'>@certificadoOrigen = 0</p>
-                        <p class = 'col fw-bold'>Tipo de Cambio</p>
-                        <p class = 'col'>@tipoCambioUSD = 20.077700</p>
-                    </div>
+                    <tr>
+                        <td class = 'fw-bold' colspan = '3'>Certificado de Origen</td>
+                        <td colspan = '3'>@certificadoOrigen = 0</td>
+                        <td class = 'fw-bold' colspan = '3'>Tipo de Cambio</td>
+                        <td colspan = '3'>@tipoCambioUSD = 20.077700</td>
+                    </tr>
+                </table>
 
-                    <p class = 'fw-bold'>Mercancías</p>
+                <h6>Mercancías</h6>
 
-                    <div class = 'm-2 row border-bottom border-2 border-dark'>
-                        <div class = 'col'>
-                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>No. Identificación</p>
-                        </div>
+                <table class = 'table'>
+                    <!-- Mercancías CCE -->
+                    <tr class = 'border-dark'>
+                        <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>No. Identificación</td>
+                        <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Fracción Arancelaria</td>
+                        <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Cantidad Aduana</td>
+                        <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Unidad Aduana</td>
+                        <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Valor Unitario Aduana</td>
+                        <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Valor Dólares</td>
+                    </tr>
+                </table>
 
-                        <div class = 'col'>
-                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Fracción Arancelaria</p>
-                        </div>
+                <div class = 'keep-together'>
+                    <table class = 'table'>
+                        <tr>
+                            <td class = 'text-center' colspan = '2'>@noIdentificacion = 68KA-12</td>
+                            <td class = 'text-center' colspan = '2'>@fraccionAranc = 34031999900</td>
+                            <td class = 'text-center' colspan = '2'>@cantidadAdu = 128.38</td>
+                            <td class = 'text-center' colspan = '2'>@unidadAdu = 01</td>
+                            <td class = 'text-center' colspan = '2'>@valorUnitarioAdu = 5.07</td>
+                            <td class = 'text-center' colspan = '2'>@valorDolares = 651.00</td>
+                        </tr>
 
-                        <div class = 'col'>
-                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Cantidad Aduana</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Unidad Aduana</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Valor Unitario Aduana</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'fw-bold text-center' style = 'font-size: 13px;'>Valor Dólares</p>
-                        </div>
-                    </div>
-
-                    <div class = 'row'>
-                        <div class = 'col'>
-                            <p class = 'text-center'>@noIdentificacion = 68KA-12</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'text-center'>@fraccionAranc = 34031999900</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'text-center'>@cantidadAdu = 128.38</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'text-center'>@unidadAdu = 01</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'text-center'>@valorUnitarioAdu = 5.07</p>
-                        </div>
-
-                        <div class = 'col'>
-                            <p class = 'text-center'>@valorDolares = 651.00</p>
-                        </div>
-                    </div>
-
-                    <div class = 'row'>
-                        <p class = 'col-1 fw-bold'>Marca</p>
-                        <p class = 'col-2'>@marca = PERMATEX</p>
-                        <p class = 'col-1 fw-bold'>Modelo</p>
-                        <p class = 'col-2'>@modelo = GRASAS Y LUBRICANTES</p>
-                        <p class = 'col-1 fw-bold'>Número de Serie</p>
-                        <p class = 'col-2'>@numeroSerie = 7503005326104</p>
-                        <p class = 'col-1 fw-bold'>SubModelo</p>
-                        <p class = 'col-2'>@submodelo = AFLOJATODO</p>
-                    </div>
+                        <tr>
+                            <td class = 'text-start fw-bold' colspan = '1'>Marca</td>
+                            <td class = 'text-start' colspan = '2'>@marca = PERMATEX</td>
+                            <td class = 'text-start fw-bold' colspan = '1'>Modelo</td>
+                            <td class = 'text-start' colspan = '2'>@modelo = GRASAS Y LUBRICANTES</td>
+                            <td class = 'text-start fw-bold' colspan = '1'>Número de Serie</td>
+                            <td class = 'text-start' colspan = '2'>@numeroSerie = 7503005326104</td>
+                            <td class = 'text-start fw-bold' colspan = '1'>SubModelo</td>
+                            <td class = 'text-start' colspan = '2'>@submodelo = AFLOJATODO</td>
+                        </tr>
+                    </table>
                 </div>
+                <!-- Termina Mercancía 1 -->
             </div>
 
             <!--
@@ -461,7 +435,7 @@
                     <table class = 'table'>
                         <tr>
                             <td colspan = '4' rowspan = '4' class = 'text-center'>
-                                <img src = '@Model.QR' width = '300' height = '300' />
+                                <img src = '@Model.QR' width = '200' height = '200' />
                             </td>
                             <td class = 'fw-bold' colspan = '8'>Cadena Original del complemento de certificación digital del SAT</td>
                         </tr>
