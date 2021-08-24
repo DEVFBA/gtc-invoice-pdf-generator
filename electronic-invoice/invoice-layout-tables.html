@@ -64,18 +64,33 @@
             <!--
                 Sección CFDIs Relacionados
             -->
-            <div class = 'row border border-3 border-dark mt-3'>
-                <h3>CFDIs Relacionados</h3>
-
-                <div class = 'row'>
-                    <p class = 'col-2 fw-bold'>Tipo de Relación</p>
-                    <p class = 'col-3'>@tipoRelacion = 01</p>
-                </div>
-
-                <div class = 'row'>
-                    <p class = 'col-2 fw-bold'>UUID Relacionado</p>
-                    <p class = 'col-3'>@uuidRelacionado = 7da8e9c5-ce88-497e-b830-35ac97d8947a</p>
-                </div>
+            <div class = 'section section-border'>
+                <h4>CFDIs Relacionados</h4>
+                <table class = 'table'>
+                    <tr>
+                        <td class = 'text-start fw-bold' colspan = '2'>Tipo de Relación</td>
+                        <td>@tipoRelacion = 01</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class = 'text-start fw-bold' colspan = '2'>UUID Relacionado</td>
+                        <td colspan = 4>@uuidRelacionado = 7da8e9c5-ce88-497e-b830-35ac97d8947a</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
             </div>
 
             <!--
@@ -100,12 +115,12 @@
 
                         <div class="keep-together">
                             <tr>
-                                <td class = 'text-center' colspan = '2'>15101514</td>
-                                <td class = 'text-center' colspan = '2'>56.3862</td>
-                                <td class = 'text-center' colspan = '2'>LTR</td>
-                                <td class = 'text-center' colspan = '2'>PEMEX MAGNA</td>
-                                <td class = 'text-center' colspan = '2'>18.5881</td>
-                                <td class = 'text-center' colspan = '2'>1,048.11</td>
+                                <td class = 'text-center' colspan = '2'>@claveProdServ = 15101514</td>
+                                <td class = 'text-center' colspan = '2'>@cantidad = 56.3862</td>
+                                <td class = 'text-center' colspan = '2'>@claveUnidad = LTR</td>
+                                <td class = 'text-center' colspan = '2'>@descripcion = PEMEX MAGNA</td>
+                                <td class = 'text-center' colspan = '2'>@valorUnitario = 18.5881</td>
+                                <td class = 'text-center' colspan = '2'>@importe = 1,048.11</td>
                             </tr>
 
                             <!--
@@ -122,7 +137,7 @@
                                 <td class = 'text-center'></td>
                                 <td class = 'text-center fw-bold'>Traslados</td>
                                 <td class = 'text-start'>Base</td>
-                                <td class = 'text-center' colspan = '2'>1,022.66</td>
+                                <td class = 'text-center' colspan = '2'>@baseTraslado = 1,022.66</td>
                             </tr>
 
                             <tr>
@@ -136,7 +151,7 @@
                                 <td class = 'text-center'></td>
                                 <td class = 'text-center'></td>
                                 <td class = 'text-start'>Impuesto</td>
-                                <td class = 'text-center' colspan = '2'>002</td>
+                                <td class = 'text-center' colspan = '2'>@impuestoTraslado = 002</td>
                             </tr>
 
                             <tr>
@@ -150,7 +165,7 @@
                                 <td class = 'text-center'></td>
                                 <td class = 'text-center'></td>
                                 <td class = 'text-start'>Tipo Factor</td>
-                                <td class = 'text-center' colspan = '2'>Tasa</td>
+                                <td class = 'text-center' colspan = '2'>@tipoFactorTraslado = Tasa</td>
                             </tr>
 
                             <tr>
@@ -164,7 +179,7 @@
                                 <td class = 'text-center'></td>
                                 <td class = 'text-center'></td>
                                 <td class = 'text-start'>Tasa o Cuota</td>
-                                <td class = 'text-center' colspan = '2'>16%</td>
+                                <td class = 'text-center' colspan = '2'>@tasaCuotaTraslado = 16%</td>
                             </tr>
 
                             <tr>
@@ -178,7 +193,7 @@
                                 <td class = 'text-center'></td>
                                 <td class = 'text-center'></td>
                                 <td class = 'text-start'>Importe</td>
-                                <td class = 'text-center' colspan = '2'>163.63</td>
+                                <td class = 'text-center' colspan = '2'>@importeImpuestoTraslado = 163.63</td>
                             </tr>
                         </div>
                     </table>
@@ -201,7 +216,7 @@
                             <td class = 'text-center'></td>
                             <td class = 'text-center'></td>
                             <td class = 'text-start fw-bold'>Subtotal</td>
-                            <td class = 'text-center' colspan = '2'>1,048.11</td>
+                            <td class = 'text-center' colspan = '2'>@subtotal = 1,048.11</td>
                         </tr>
 
                         <tr>
@@ -215,7 +230,7 @@
                             <td class = 'text-center'></td>
                             <td class = 'text-center'></td>
                             <td class = 'text-start fw-bold'>Impuesto Trasladados</td>
-                            <td class = 'text-center' colspan = '2'>163.63</td>
+                            <td class = 'text-center' colspan = '2'>@totalImptoTras = 163.63</td>
                         </tr>
 
                         <tr>
@@ -229,7 +244,7 @@
                             <td class = 'text-center'></td>
                             <td class = 'text-center'></td>
                             <td class = 'text-start fw-bold border-bottom'>Retenciones</td>
-                            <td class = 'text-center border-bottom' colspan = '2'>-</td>
+                            <td class = 'text-center border-bottom' colspan = '2'>@totalRetencion = -</td>
                         </tr>
 
                         <tr>
@@ -243,7 +258,7 @@
                             <td class = 'text-center'></td>
                             <td class = 'text-center'></td>
                             <td class = 'text-start fw-bold'>Total</td>
-                            <td class = 'text-center' colspan = '2'>1,211.74</td>
+                            <td class = 'text-center' colspan = '2'>@total = 1,211.74</td>
                         </tr>
                     </table>
                 </div>
@@ -575,7 +590,7 @@
                     </tr>
 
                     <tr>
-                        <td class = 'text-break' colspan = '12'>kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5BghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStPYE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0bx3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==</td>
+                        <td class = 'text-break' colspan = '12'>@selloDigCFDI = kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5BghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStPYE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0bx3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==</td>
                     </tr>
 
                     <tr>
@@ -583,34 +598,32 @@
                     </tr>
 
                     <tr>
-                        <td class = 'text-break' colspan = '12'>R5dXrigpeMGZOvQKTSQHUaPgdyX1ad4gaen6+I0QpNEKkxS324jFmeLcU75QJu/T9ZdsNzFhvJELCJSObJvHLa7wrEb40Cu960LXSF6K9YNKSir9rwAXMXD/oCi5O/hwNCSqRqJWM2myzlvN3jk+3fSMB9+CRJUoCORwmpGhH/77e4UAPXhY8uAZj9G/leoPPdIndOGpGZZx/eEKrJYJls4mSR/++1wBMmEwxEHfIB5bIaW2ISXgWTUzxIVq0pIoK85zpZKFYgYrEFWBZz3mmUnMaoTh9uJ+KweFgF+kPICgrMpUGr/4EtSmJQbyOxh1sQu2yrgnUeObf6JC2ZqU4w==</td>
+                        <td class = 'text-break' colspan = '12'>@selloDigSAT = R5dXrigpeMGZOvQKTSQHUaPgdyX1ad4gaen6+I0QpNEKkxS324jFmeLcU75QJu/T9ZdsNzFhvJELCJSObJvHLa7wrEb40Cu960LXSF6K9YNKSir9rwAXMXD/oCi5O/hwNCSqRqJWM2myzlvN3jk+3fSMB9+CRJUoCORwmpGhH/77e4UAPXhY8uAZj9G/leoPPdIndOGpGZZx/eEKrJYJls4mSR/++1wBMmEwxEHfIB5bIaW2ISXgWTUzxIVq0pIoK85zpZKFYgYrEFWBZz3mmUnMaoTh9uJ+KweFgF+kPICgrMpUGr/4EtSmJQbyOxh1sQu2yrgnUeObf6JC2ZqU4w==</td>
                     </tr>
 
-                    <div class = 'keep-together'>
-                        <tr>
-                            <td colspan = '4' rowspan = '4' class = 'text-center'>
-                                <img src = '@Model.QR' width = '300' height = '300' />
-                            </td>
-                            <td class = 'fw-bold' colspan = '8'>Cadena Original del complemento de certificación digital del SAT</td>
-                        </tr>
+                    <tr>
+                        <td colspan = '4' rowspan = '4' class = 'text-center'>
+                            <img src = '@Model.QR' width = '300' height = '300' />
+                        </td>
+                        <td class = 'fw-bold' colspan = '8'>Cadena Original del complemento de certificación digital del SAT</td>
+                    </tr>
 
-                        <tr>
-                            <td class = 'text-break' colspan = '8'>||1.1|12c5eab9-95b3-45bb-bbf1-2c801d62266b|2021-05-20T12:42:23|LSO1306189R5|kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5B ghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStP YE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0b x3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==|00001000000408254801||</td>
-                        </tr>
+                    <tr>
+                        <td class = 'text-break' colspan = '8'>@cadenaOrigianl = ||1.1|12c5eab9-95b3-45bb-bbf1-2c801d62266b|2021-05-20T12:42:23|LSO1306189R5|kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5B ghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStP YE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0b x3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==|00001000000408254801||</td>
+                    </tr>
 
-                        <tr>
-                            <td class = 'fw-bold' colspan = '2'>RFC del Proveedor de Certificación</td>
-                            <td colspan = '2'>LSO1306189R5</td>
-                            <td class = 'fw-bold' colspan = '2'>Fecha y hora de certificación</td>
-                            <td colspan = '2'>2021-05-20 12:42:23</td>
-                        </tr>
+                    <tr>
+                        <td class = 'fw-bold' colspan = '2'>RFC del Proveedor de Certificación</td>
+                        <td colspan = '2'>@rfcProveedorCert = LSO1306189R5</td>
+                        <td class = 'fw-bold' colspan = '2'>Fecha y hora de certificación</td>
+                        <td colspan = '2'>@fechaCertificacion = 2021-05-20 12:42:23</td>
+                    </tr>
 
-                        <tr>
-                            <td class = 'fw-bold' colspan = '2'>No. De serie del certificado SAT</td>
-                            <td colspan = '2'>00001000000408254800</td>
-                            <td class = 'fw-bold' colspan = '4'>PDF generado y creado por Garantía Total en Consultoría Tecnológica Avanzada S.A. de C.V.</td>
-                        </tr>
-                    </div>
+                    <tr>
+                        <td class = 'fw-bold' colspan = '2'>No. De serie del certificado SAT</td>
+                        <td colspan = '2'>@noSerieCertificado = 00001000000408254800</td>
+                        <td class = 'fw-bold' colspan = '4'>PDF generado y creado por Garantía Total en Consultoría Tecnológica Avanzada S.A. de C.V.</td>
+                    </tr>
                 </table>
             </div>
 
@@ -620,7 +633,7 @@
             <table class = 'table'>
                 <tr>
                     <td class = 'fw-bold' colspan = '6'>Este documento es una representación impresa de un CFDI</td>
-                    <td class = 'fw-bold text-end' colspan = '6'>Página 1 de 1</td>
+                    <td class = 'fw-bold text-end' colspan = '6'>Página # de #</td><!-- Aquí va el número de página del total -->
                 </tr>
             </table>
         </div>

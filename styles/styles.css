@@ -128,6 +128,13 @@ h6, .h6 {
     table-layout: fixed;
     }
 
+.dynamic-width-table {
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
 .table-label {
     font-size: 16px;
     word-wrap: break-word !important;
