@@ -14,7 +14,7 @@
             <div class = 'section-border section'>
                 <h3>Complemento de Pago</h3>
 
-                <table class = 'table table-borderless'>
+                <table class = 'table'>
                     <tr>
                         <td class = 'fw-bold table-label' colspan = '6'>Receptor</td>
                         <td class = 'fw-bold table-label' colspan = '6'>Emisor</td>
@@ -136,7 +136,7 @@
                             <td class = 'table-header border-bottom text-center fw-bold' colspan = '2'>UUID</td>
                             <td class = 'table-header border-bottom text-center fw-bold' colspan = '2'>Método de Pago DR</td>
                             <td class = 'table-header border-bottom text-center fw-bold' colspan = '2'>Moneda DR</td>
-                            <td class = 'table-header border-bottom text-center fw-bold' colspan = '1'>Num Parcialidad</td>
+                            <td class = 'table-header border-bottom text-center fw-bold' colspan = '1'>Num Pago</td>
                             <td class = 'table-header border-bottom text-center fw-bold' colspan = '1'>Saldo Anterior</td>
                             <td class = 'table-header border-bottom text-center fw-bold' colspan = '1'>Importe Pago</td>
                             <td class = 'table-header border-bottom text-center fw-bold' colspan = '1'>Saldo Insoluto</td>
@@ -180,7 +180,9 @@
                     </tr>
 
                     <tr>
-                        <td colspan = '4' rowspan = '4'>Aquí va el QR</td>
+                        <td colspan = '4' rowspan = '4' class = 'text-center'>
+                            <img src = '@Model.QR' width = '300' height = '300' />
+                        </td>
                         <td class = 'fw-bold' colspan = '8'>Cadena Original del complemento de certificación digital del SAT</td>
                     </tr>
 
