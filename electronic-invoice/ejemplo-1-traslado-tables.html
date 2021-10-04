@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <title>Invoice Layout</title>
+        <meta charset = 'UTF-8'>
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+        <link href = '../styles/styles.css' rel = 'stylesheet'>
+    </head>
+
+    <body style = 'font-size: 12px;'>
+        <div class = 'container'>
+            <!--
+                Sección Encabezado
+            -->
+            <div class = 'section-border section'>
+                <h3>Traslado</h3>
+
+                <table class = 'table'>
+                    <tr>
+                        <td class = 'fw-bold table-label' colspan = '6'>Receptor</td>
+                        <td class = 'fw-bold table-label' colspan = '6'>Emisor</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = '6'>ITW POLY MEX, S DE RL DE CV</td>
+                        <td colspan = '6'>Autotransportes de Carga Tresguerras S.A de C.V.</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = '6'>IPM6203226B4</td>
+                        <td colspan = '6'>ACT6808066SA</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = '6'>G03 - Gastos en General</td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'fw-bold table-label' colspan = '4'>Serie</td>
+                        <td class = 'fw-bold table-label' colspan = '4'>Folio</td>
+                        <td class = 'fw-bold table-label' colspan = '4'>Fecha</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = '4'></td>
+                        <td colspan = '4'>35414887</td>
+                        <td colspan = '4'>12/01/2021</td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'fw-bold table-label' colspan = '4'>Moneda</td>
+                        <td class = 'fw-bold table-label' colspan = '4'>Método de Pago</td>
+                        <td class = 'fw-bold table-label' colspan = '4'>UUID</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = '4'>MXN</td>
+                        <td colspan = '4'></td>
+                        <td colspan = '4'>002b0948-4f63-4036-92c9-cff1317c5c45</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--
+                Sección Detalle
+            -->
+            <div>
+                <div class = 'section-border section no-margin-bottom'>
+
+                    <!--
+                        Conceptos
+                    -->
+                    <table class = 'table'>
+                        <!-- Concepto -->
+                        <tr class = 'border-dark'>
+                            <td class = 'table-header text-center fw-bold' colspan = '2'>Clave Producto Servicio</td>
+                            <td class = 'table-header text-center fw-bold' colspan = '2'>Cantidad</td>
+                            <td class = 'table-header text-center fw-bold' colspan = '2'>Clave Unidad</td>
+                            <td class = 'table-header text-center fw-bold' colspan = '2'>Descripción</td>
+                            <td class = 'table-header text-center fw-bold' colspan = '2'>Precio Unitario</td>
+                            <td class = 'table-header text-center fw-bold' colspan = '2'>Importe</td>
+                        </tr>
+
+                        <tr class = 'border-dark'>
+                            <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Impuestos</td>
+                            <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Base</td>
+                            <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Tasa o Cuota</td>
+                            <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Impuesto</td>
+                            <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'>Tipo Factor</td>
+                            <td class = 'table-header text-center border-bottom fw-bold' colspan = '2'></td>
+                        </tr>
+                    </table>
+
+                    <div class = 'keep-together'>
+                        <table class = 'table'>
+                            <tr>
+                                <td class = 'text-center' colspan = '2'>78101802</td>
+                                <td class = 'text-center' colspan = '2'>1</td>
+                                <td class = 'text-center' colspan = '2'>E48</td>
+                                <td class = 'text-center' colspan = '2'>Flete</td>
+                                <td class = 'text-center' colspan = '2'>160.64</td>
+                                <td class = 'text-center' colspan = '2'>160.64</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Termina Concepto 1 -->
+
+                    <div class = 'keep-together'>
+                        <table class = 'table'>
+                            <tr>
+                                <td class = 'text-center' colspan = '2'>78101801</td>
+                                <td class = 'text-center' colspan = '2'>1</td>
+                                <td class = 'text-center' colspan = '2'>E48</td>
+                                <td class = 'text-center' colspan = '2'>Flete Entrega a Domicilio</td>
+                                <td class = 'text-center' colspan = '2'>214.45</td>
+                                <td class = 'text-center' colspan = '2'>214.45</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Termina Concepto 2 -->
+
+                    <div class = 'keep-together'>
+                        <table class = 'table'>
+                            <tr>
+                                <td class = 'text-center' colspan = '2'>78101802</td>
+                                <td class = 'text-center' colspan = '2'>1</td>
+                                <td class = 'text-center' colspan = '2'>E48</td>
+                                <td class = 'text-center' colspan = '2'>Flete por ajuste de combustible</td>
+                                <td class = 'text-center' colspan = '2'>2.14</td>
+                                <td class = 'text-center' colspan = '2'>2.14</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- Termina Concepto 3 -->
+                </div>
+            </div>
+
+            <!--
+                Sección Pie de Documento
+            -->
+
+            <div>
+                <table class = 'table'>
+                    <tr>
+                        <td class = 'fw-bold' colspan = '12'>Sello Digital del CFDI</td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'text-break' colspan = '12'>kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5BghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStPYE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0bx3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==</td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'fw-bold' colspan = '12'>Sello Digital del SAT</td>
+                    </tr>
+
+                    <tr>
+                        <td class = 'text-break' colspan = '12'>R5dXrigpeMGZOvQKTSQHUaPgdyX1ad4gaen6+I0QpNEKkxS324jFmeLcU75QJu/T9ZdsNzFhvJELCJSObJvHLa7wrEb40Cu960LXSF6K9YNKSir9rwAXMXD/oCi5O/hwNCSqRqJWM2myzlvN3jk+3fSMB9+CRJUoCORwmpGhH/77e4UAPXhY8uAZj9G/leoPPdIndOGpGZZx/eEKrJYJls4mSR/++1wBMmEwxEHfIB5bIaW2ISXgWTUzxIVq0pIoK85zpZKFYgYrEFWBZz3mmUnMaoTh9uJ+KweFgF+kPICgrMpUGr/4EtSmJQbyOxh1sQu2yrgnUeObf6JC2ZqU4w==</td>
+                    </tr>
+                </table>
+            
+                <div class = 'keep-together'>
+                    <table class = 'table'>
+                        <tr>
+                            <td colspan = '4' rowspan = '4' class = 'text-center'>
+                                <img src = '@Model.QR' width = '200' height = '200' />
+                            </td>
+                            <td class = 'fw-bold' colspan = '8'>Cadena Original del complemento de certificación digital del SAT</td>
+                        </tr>
+
+                        <tr>
+                            <td class = 'text-break' colspan = '8'>||1.1|12c5eab9-95b3-45bb-bbf1-2c801d62266b|2021-05-20T12:42:23|LSO1306189R5|kjD/gGKIOqBLGK+w4ggcU9kR80RLsm07AlXQsMAR21G3OZp5B ghvJREZbjoysTbDwN8M8OUOUOVT9Ltu6eBDw3xcyKOLngq0vLi9AzQbKU09cRCAYG0DRMPTIyceBsaqap1xiDPIcTkw/EbPHlZdOkmmT4IyeQl2kmStP YE3DykPApVcnBPuD20Dqq8U+nzAoSUksjyoZypJ6g089FHpHiNpQVf6pKtL7PGDfi0FfYBPd4V1ClX45irQzbqKTPC9ajbuRzLzXjR5IJ36D/DtXO+BxBR0b x3k7AmAipKk0q/IRC7+9pBgeXhoBoqQwNcT0i9hoJXJg/PFZuJrVZbyiw==|00001000000408254801||</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class = 'fw-bold' colspan = '2'>RFC del Proveedor de Certificación</td>
+                            <td colspan = '2'>LSO1306189R5</td>
+                            <td class = 'fw-bold' colspan = '2'>Fecha y hora de certificación</td>
+                            <td colspan = '2'>2021-05-20 12:42:23</td>
+                        </tr>
+
+                        <tr>
+                            <td class = 'fw-bold' colspan = '2'>No. De serie del certificado SAT</td>
+                            <td colspan = '2'>00001000000408254800</td>
+                            <td class = 'fw-bold' colspan = '4'>PDF generado y creado por Garantía Total en Consultoría Tecnológica Avanzada S.A. de C.V.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!--
+                Sección Pie de Página
+            -->
+            <table class = 'table'>
+                <tr>
+                    <td class = 'fw-bold' colspan = '6'>Este documento es una representación impresa de un CFDI</td>
+                    <td class = 'fw-bold text-end' colspan = '6'>Página 1 de 1</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
